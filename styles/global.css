@@ -1,7 +1,8 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: White;
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 30px;
 }
 
 body {
@@ -17,11 +18,83 @@ header {
     top: 0;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    justify-content: center;
+    background-color: darkseagreen;
+    color: white;
 }
 
 main {
     padding: 20px;
+}
+
+#name-tag {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+
+
+#button {
+   position: relative;
+   background-color: paleturquoise;
+    min-height: 30px;
+    min-width: 120px;
+    border: solid gray 3px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+#button:hover {
+    background-color: peachpuff;
+    transition: 0.5s;
+
+}
+
+
+#name-input {
+    border: solid darkseagreen 2px;
+    margin-left: 40px;
+    
+}
+
+#hello, #footer {
+    background-color: lightpink;
+    
+}
+
+#hello {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: 15px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    
+   
+}
+
+#name {
+    height: 100px;
+    font-size: XX-large;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-wrap: wrap;
+}
+
+#footer {
+    height: 35px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 footer {
