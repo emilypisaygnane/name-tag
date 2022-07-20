@@ -1,7 +1,8 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: White;
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 30px;
 }
 
 body {
@@ -17,11 +18,50 @@ header {
     top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--header-background);
 }
 
 main {
     padding: 20px;
+}
+
+#name-tag {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    justify-content: center;
+    text-align: center;
+    background-color: lightgrey;
+    
+}
+
+#name-input {
+    
+}
+
+#hello {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    padding-top: 10px;
+    background-color: lightpink;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+#name {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+    height: 35px;
+    background-color: lightpink;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
 footer {
