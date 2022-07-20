@@ -19,7 +19,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--header-background);
+    background-color: darkseagreen;
+    color: white;
 }
 
 main {
@@ -34,11 +35,40 @@ main {
     border-radius: var(--border-radius);
     justify-content: center;
     text-align: center;
-    background-color: lightgrey;
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
 
+
+
+#button {
+   position: relative;
+   background-color: paleturquoise;
+    min-height: 30px;
+    min-width: 120px;
+    border: solid gray 3px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+#button:hover {
+    background-color: peachpuff;
+    transition: 0.5s;
+
+}
+
+
 #name-input {
+    border: solid darkseagreen 2px;
+    margin-left: 40px;
+    
+}
+
+#hello, #footer {
+    background-color: lightpink;
     
 }
 
@@ -47,20 +77,23 @@ main {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    padding-top: 10px;
-    background-color: lightpink;
+    padding: 15px;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    
+   
 }
 
 #name {
     height: 100px;
+    font-size: XX-large;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    text-wrap: wrap;
 }
 
 #footer {
     height: 35px;
-    background-color: lightpink;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
